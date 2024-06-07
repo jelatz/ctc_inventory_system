@@ -1,14 +1,8 @@
 <!DOCTYPE html>
-<html lang={{str_replace('_','-', app()->getLocale())}}>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
-    <x-partials.head />
-</head>
-<body>
-    @if(auth())
-    <x-sidebar />
-    @else
-    <x-sidebar class="hidden"/>
-    @endif
-    {{$slot}}
-</body>
-</html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Laravel</title>
